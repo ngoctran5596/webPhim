@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dangky/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/google?style=brands">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body onload="fill();">
+    <div class="full">
+        <div class="boxcenter">
+            <h1>PAGE TMN</h1>
+            <div class="bwwhite">
+
+                <h2>Đăng Ký</h2>
+                <div class="full ">
+                    <div class="top">
+                        <div class="i1"><i class="fa fa-facebook-f"></i></div>
+                        <div class="i"> <i class="fa fa-google"></i></div>
+                    </div>
+                </div>
+                <div class="fullform">
+                    <form name="frmLogin" action="index.html">
+                        <p><input type="text" name="txtUsername" placeholder="Enter User name"></p>
+                        <p><input type="password" name="txtPwd" placeholder="Enter Password"></p>
+                        <p><input type="checkbox" name="ckRem" id="mk">Nhớ mật khẩu</p>
+                        <p><input type="button" value="ĐĂNG KÝ" id="btn" onclick="check();"></p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/login.js"></script>
+<script>
+    var username = localStorage.getItem("username");
+    var password = localStorage.getItem("password");
+
+    function fill() {
+        var isCheck = localStorage.getItem("remember");
+        if (isCheck == true) {
+            frmLogin.txtUsername.value = localStorage.getItem("username");
+            frmLogin.txtPwd.value = localStorage.getItem("password");
+            frmLogin.ckRem.checked = isCheck;
+        }
+    }
+
+    function check() {
+        var user = frmLogin.txtUsername.value;
+        var pass = frmLogin.txtPwd.value;
+        var regUser = /^[a-z0-9]{1,15}$/;
+        var regPass = /^[a-z0-9]{1,15}$/;
+        if (user.trim() == " ") {
+            alert("Không để trống tên. ");
+            frmLogin.txtUsername.focus();
+            return;
+        } else if (!regUser.test(user)) {
+            alert("Tên đăn nhập không đúng định dạng ");
+            frmLogin.txtUsername.focus();
+            return;
+        } else if (user == username) {
+            alert("Trùng tên đăng nhập")
+            frmLogin.txtUsername.focus();
+            return;
+        } else if (pass.trim() == " ") {
+            alert("Không để trống mật khẩu. ");
+            frmLogin.txtPwd.focus();
+            return;
+        } else if (!regPass.test(pass)) {
+            alert("Mật khẩu không đúng định dạng. ");
+            frmLogin.txtPwd.focus();
+            return;
+        } else {
+            localStorage.setItem("username", frmLogin.txtUsername.value);
+            localStorage.setItem("password", frmLogin.txtPwd.value);
+            localStorage.setItem("remember", frmLogin.ckRem.checked);
+            frmLogin.submit();
+        }
+    }
+</script>

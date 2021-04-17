@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bgnen {
+    width: 100%;
+    float: left;
+    top: -30;
+    position: absolute;
+    height: 100%;
+}
+
+.bgnen img {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.full {
+    width: 100%;
+    float: left;
+}
+
+.boxcenter {
+    top: 200px;
+    left: 500px;
+    position: absolute;
+    width: 33%;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+.page {
+    width: 100%;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+.page a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+.bwwhite {
+    background-color: white;
+    min-height: 450px;
+    margin-top: 10px;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.top {
+    width: 29%;
+    margin: 0 auto;
+}
+
+.i {
+    float: left;
+    width: 48%;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.i1 {
+    background-color: rgb(65, 65, 238);
+    float: left;
+    color: rgb(255, 255, 255);
+    width: 48%;
+    border-radius: 7px;
+    text-align: center;
+    margin-right: 4%;
+}
+
+.i1 i,
+.i i {
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.gach {
+    position: relative;
+}
+
+.or {
+    padding: 5px 5px;
+    width: 10%;
+    margin-left: 45%;
+    text-align: center;
+    position: absolute;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.td {
+    padding: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 4%;
+    font-size: 14pt;
+    color: #666;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(250, 87, 87);
+    color: #fff;
+    border: none;
+}
+
+.a {
+    text-align: center;
+}
+
+.a a {
+    color: #666;
+}
+
+.b {
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 0 7px;
+}
+
+.b a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}

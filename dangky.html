@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dangky/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/google?style=brands">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="fill();">
+    <div class="full">
+        <div class="bgnen">
+            <img src="images/ok.jpg" alt="">
+        </div>
+        <div class="page">
+            <a href="#" style="color: white;"> TMN </a>
+        </div>
+        <div class="boxcenter">
+
+            <div class="bwwhite">
+                <h2>Đăng nhập</h2>
+                <div class="full ">
+                    <div class="top">
+                        <div class="i1"><i class="fa fa-facebook-f"></i></div>
+                        <div class="i"> <i class="fa fa-google"></i></div>
+                    </div>
+                </div>
+                <div class="full gach">
+                    <div class="or">HOẶC LÀ</div>
+                    <hr>
+                </div>
+                <div class="full">
+                    <form name="frmLogin" action="index.html">
+                        <p><input type="text" name="txtUsername" placeholder="Enter User name"></p>
+                        <p><input type="password" name="txtPwd" placeholder="Enter Password"></p>
+                        <p><input type="checkbox" name="ckRem" style="width: 100px;">Nhớ mật khẩu</p>
+                        <p><input type="button" value="Login" onclick="fLogin();" style="width: 200px; text-align: center; margin-left: 100px;"></p>
+                        <p>
+                            <a href="dangnhap.html">Chưa có tài khoản đăng ký dùm</a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
+<script src="js/slideshow.js"></script>
+<script>
+    //function fLogin() {
+    //      if (frmLogin.txtUsername.value !== '' && frmLogin.txtPwd.value !== '') {
+    //         user.username = frmLogin.txtUsername.value;
+    //         user.password = frmLogin.txtPwd.value;
+    //        localStorage.setItem("objUser", JSON.stringify(user));
+    //
+    //
+    //  frmLogin.submit();
+    //  }
+    // }
+
+    function fLogin() {
+        var user = frmLogin.txtUsername.value;
+        var pass = frmLogin.txtPwd.value;
+        var username = localStorage.getItem("username");
+        var password = localStorage.getItem("password");
+        if (user == username && pass == password) {
+            frmLogin.submit();
+        } else {
+            alert("Tài khoản không tồn tại")
+        }
+
+    }
+</script>

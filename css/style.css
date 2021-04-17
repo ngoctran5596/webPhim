@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+}
+    
+.full{
+    width: 100%;
+    float: left;
+}
+.boxcenter{
+    width: 80%;
+    margin: 0 auto;
+}
+.bgred{
+    background-color:rgb(255, 247, 247);
+    min-height: 50px;
+}
+.bgbanner{
+    background-image: url(../images/banner6_817.jpg);
+    min-height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    
+}
+.boxcenter h1{
+    font-size: 5em;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Monoton', cursive;
+    text-shadow: 1px 2px crimson;
+    position: absolute;
+    bottom: 50px;
+    left:30% ;
+}
+.logo{
+    float: left;
+    width: 20%;
+}
+.logo img{
+    height: 50px;
+}
+.menu{
+    float: left;
+    width: 60%;
+    text-align: center;
+    line-height: 50px;
+}
+.menu a{
+    width: 11%;
+    margin-right: 5%;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover, .login a:hover , .menu1 a:hover ,.col-3 a:hover,.col-3c a:hover{
+    color: blue;
+
+}
+.login{
+    float: right;
+    width: 12%;
+    text-align: center;
+    line-height: 30px;
+    background-color:  rgb(253, 144, 10);
+    margin: 10px 0px;
+    border-radius: 90px;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+}
+
+.col-4{
+    width: 32%;
+    float: left;
+    background-image: url(../images/section2.jpg);
+    min-height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.8;
+}
+.legen , .assin , .night {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(228, 190, 38);
+    font-family: 'Londrina Solid', cursive;
+}
+.col-4a{
+    width: 32%;
+    float: left;
+    background-image: url(../images/section3.jpg);
+    min-height: 600px;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.col-4b{
+    width: 32%;
+    float: left;
+    background-image: url(../images/section4.jpg);
+    min-height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.8;
+}
+.mr{
+    margin-right: 2%;
+}
+.boxcenter h2{
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+.boxcenter h4{
+    margin-top:  50px;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: white;
+}
+.bgblack{ padding-top: 50px; 
+   margin-top: 50px;
+    background-color: black;
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+.recen{
+   left: 40%;
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+   
+}
+.col-6a {
+    width: 49%;
+    float: left;
+    background-color: darkkhaki;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+.col-6{
+    width: 49%;
+    float: left;
+    background-color: darkkhaki;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+p{
+    color: white;
+    padding-top: 50px;
+    text-align: center; 
+}
+.col-6a img ,.col-6 img{
+    border-radius: 20px;
+   
+    width: 50%;
+    float: left;
+}
+
+.bgss3{
+
+    background-image: url(../images/dung\ bg.jpg);
+    min-height:650px;
+    background-size: 100%;
+    margin-top: 70px;
+    float: left;
+    position: relative;
+ 
+
+}
+.recent{
+   color: rgba(red, green, blue, alpha);
+    position: absolute;
+    top: 10px;
+    left:40%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+
+}
+.col-3{
+    width: 24%;
+    float: left;
+    background-color: white;
+   min-height:450px;
+   color: blue;
+   margin-right: 1.33%;
+   margin-top: 10%;
+   text-align: center;
+}
+.col-3 a ,.col-3c a{
+color: red;
+text-decoration: none;
+font-size: 25px;
+font-family: 'Londrina Solid', cursive;
+}
+
+ .col-3c{
+     text-align: center;
+    margin-top: 10%;
+     width: 24%;
+     float: left;
+     background-color: white;
+     min-height: 450px;
+     color: blue;
+ }
+ .col-3 img, .col-3c img{
+     width: 100%;
+     height: 300px ;
+     object-fit: cover;
+ }
+ .col-3 p, .col-3c p{
+     text-align: center;
+     padding-top: 10px; 
+     color: black;
+     font-size: 15pt;
+     font-family: 'Londrina Solid', cursive;
+ }
+ /* của footer*/
+ .menu1 {
+
+    float: left;
+    width: 49%;
+    line-height: 50px;
+}
+
+.bgblack1{
+   
+    margin-top: 70px;
+    background-color:rgb(12, 12, 12);
+    height: 50px;
+}
+.menu1 a{
+    color: white; 
+     text-decoration: none;
+}
+.mrft{
+    margin-right: 30px;
+}
+.menu2{
+
+   
+    width: 48%;
+    float: right;
+  min-height:   50px;
+ position: relative;
+}
+.lienhe {
+  position: absolute;
+    
+  left: 40%;
+  top: 15px;
+    width: 100%;
+  color: white;
+ 
+    text-decoration: none;
+}
+
+
+
+/* của cái  section cuối*/
+
+.col-end{
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 70px;
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    min-height: 500px;
+}
+.col-end1 p {
+    margin:0;
+    color:white;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 70px;
+}
+.col-end p{
+    margin:0 10px;
+    color:black;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 70px;
+}
+.col-end img{
+    padding-top: 65px;
+    text-align: center;
+    width: 50%;
+    min-height: 100px;
+}
+.col-end h7{
+    color: black;
+    font-family: 'Special Elite', cursive;  
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.col-end1{
+    margin-top: 70px;
+    width: 49%;
+    float: left;
+    background-color: black;
+    min-height: 300px;
+}
+
+.em2 {
+    float: left;
+    min-height:200px;
+    width: 100%;
+}
+.em2 img{
+    margin-top: 10px;
+    object-fit: cover;
+    height:130px;
+    margin: 10px 30px   ;
+    width:30%;
+  float: left;
+} 
+.em2 a{
+
+    color: white
+}
+.col-end1 a{
+    color: rgb(255, 255, 255);
+    font-family: 'Londrina Solid', cursive;
+    font-size: 50px;
+}
+.col-end1 p1{
+    margin: 0px 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+} 
+.fixed {
+    position: fixed;
+}
